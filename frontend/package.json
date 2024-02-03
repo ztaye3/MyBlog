@@ -1,0 +1,96 @@
+{
+  "name": "frontend",
+  "version": "0.1.2",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "1.x",
+    "@material-ui/core": "^4.12.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.47",
+    "@material-ui/pickers": "^3.2.10",
+    "@mui/icons-material": "^5.0.0",
+    "@reduxjs/toolkit": "^1.4.0",
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.16.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^10.4.2",
+    "avataaars": "^2.0.0",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "circular-json": "^0.5.9",
+    "clsx": "^1.1.1",
+    "connected-react-router": "^6.9.1",
+    "country-flag-icons": "^1.4.0",
+    "css-loader": "^6.5.1",
+    "date-fns": "^2.12.0",
+    "detect-browser-language": "^0.0.2",
+    "google-maps-react": "^2.0.2",
+    "highcharts": "^9.1.2",
+    "highcharts-react-official": "^2.2.2",
+    "i18next": "^20.3.4",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "i18next-http-backend": "^1.2.7",
+    "js-cookie": "^2.2.1",
+    "material-table": "^1.63.0",
+    "material-ui": "^0.15.0",
+    "material-ui-country-flags": "^3.0.1",
+    "material-ui-flags": "^1.2.4",
+    "moment": "^2.29.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.6.1",
+    "react-cookie": "^4.0.3",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^16.12.0",
+    "react-flags-select": "^2.1.2",
+    "react-i18next": "^11.11.3",
+    "react-icons": "^4.2.0",
+    "react-redux": "^7.2.4",
+    "react-responsive-carousel": "^3.2.20",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.0",
+    "react-stack-overflow-badge": "^1.0.9",
+    "react-stripe-checkout": "^2.6.3",
+    "react-table": "^7.7.0",
+    "react-toastify": "^7.0.4",
+    "recharts": "^2.0.0-beta.1",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.2.0",
+    "universal-cookie": "^4.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts --max_old_space_size=1000 build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@material-table/core": "^4.3.16",
+    "prettier": "2.1.1",
+    "web-vitals": "^2.1.2"
+  },
+  "build": "export NODE_OPTIONS=--max_old_space_size=1000 && react-scripts build",
+  "start": "export NODE_OPTIONS=--max_old_space_size=1000 && react-scripts start"
+}

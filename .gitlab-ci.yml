@@ -1,0 +1,27 @@
+stages:
+  - test
+
+unit-test:
+  stage: test
+  script:
+    - echo "Running unit-tests ..."
+    - pwd
+    - cd backend
+    - sudo -S <<< "$SUDO_PASS" docker-compose up --build -d
+    - sleep 60
+    - sudo -S <<< "$SUDO_PASS" chmod +x test-runner.sh
+    - sudo -S <<< "$SUDO_PASS" ./test-runner.sh
+    - sudo -S <<< "$SUDO_PASS" docker-compose down --remove-orphans
+
+
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - backend/report.xml
+
+  tags:
+    - "test-zach-blog"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - allow_failure: true
